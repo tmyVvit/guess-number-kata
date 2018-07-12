@@ -27,4 +27,13 @@ public class AnswerTest {
         }
     }
 
+    @Test
+    public void should_throw_the_exception_when_call_validate_given_repeated_numbers(){
+        Answer answer = Answer.createAnswer("1 3 3 5");
+        try {
+            answer.validate();
+            fail("should throw the exception");
+        } catch (AnswerFormatIncorrectException answerFormatIncorrectException){
+        }
+    }
 }

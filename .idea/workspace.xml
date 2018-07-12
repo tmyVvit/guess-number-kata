@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69140cf5-a531-41e5-90f4-fa63644bf419" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/tdd-java-base_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/tdd-java-base_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tw/core/AnswerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tw/core/AnswerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tw/core/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="509">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#384#385#0" expanded="true" />
                 <element signature="e#422#423#0" expanded="true" />
@@ -64,8 +59,8 @@
       <file leaf-file-name="AnswerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tw/core/AnswerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="320">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#205#206#0" expanded="true" />
@@ -585,26 +580,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AnswerTest.should_not_throw_the_exception_when_call_validate">
+  <component name="RunManager" selected="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="All in tdd-java-base_test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd-java-base_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="All in tdd-java-base_test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-java-base_test" />
@@ -669,7 +647,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="InputValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-java-base_test" />
       <extension name="coverage">
         <pattern>
@@ -680,9 +658,32 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="tw.core" />
-      <option name="MAIN_CLASS_NAME" value="tw.core.InputValidatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tw.core.AnswerTest" />
+      <option name="METHOD_NAME" value="should_throw_the_exception_when_call_validate_given_less_than_4_numbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd-java-base_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tw.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tw.core" />
+      <option name="MAIN_CLASS_NAME" value="tw.core.AnswerTest" />
+      <option name="METHOD_NAME" value="should_throw_the_exception_when_call_validate_given_repeated_numbers" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -731,19 +732,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in tdd-java-base_test (1)" />
-      <item itemvalue="JUnit.InputValidatorTest" />
       <item itemvalue="JUnit.All in tdd-java-base_test (2)" />
       <item itemvalue="JUnit.AnswerTest.should_return_true_when_call_validate" />
       <item itemvalue="JUnit.AnswerTest.should_not_throw_the_exception_when_call_validate" />
+      <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" />
+      <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers" />
+        <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" />
         <item itemvalue="JUnit.AnswerTest.should_not_throw_the_exception_when_call_validate" />
         <item itemvalue="JUnit.AnswerTest.should_return_true_when_call_validate" />
         <item itemvalue="JUnit.All in tdd-java-base_test (2)" />
-        <item itemvalue="JUnit.InputValidatorTest" />
-        <item itemvalue="JUnit.All in tdd-java-base_test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -757,17 +758,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531377778769</updated>
-      <workItem from="1531377784269" duration="3390000" />
+      <workItem from="1531377784269" duration="3644000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.07.12 at 14h 45m 08s.xml">
-      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2018.07.12 at 14h 52m 12s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_timeoutExceeded - 2018.07.12 at 14h 52m 26s.xml">
       <configuration name="LibraryTest.timeoutExceeded" configurationId="JUnit" />
     </history-entry>
@@ -792,9 +787,15 @@
     <history-entry file="AnswerTest_should_not_throw_the_exception_when_call_validate - 2018.07.12 at 15h 37m 58s.xml">
       <configuration name="AnswerTest.should_not_throw_the_exception_when_call_validate" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AnswerTest_should_throw_the_exception_when_call_validate_given_less_than_4_numbers - 2018.07.12 at 15h 43m 28s.xml">
+      <configuration name="AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AnswerTest_should_throw_the_exception_when_call_validate_given_less_than_4_numbers - 2018.07.12 at 15h 43m 38s.xml">
+      <configuration name="AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3390000" />
+    <option name="totallyTimeSpent" value="3644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -818,9 +819,9 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32946146" />
       <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.21354167" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32946146" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
@@ -874,7 +875,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tw/core/AnswerTest.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1053,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tw/core/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="509">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#384#385#0" expanded="true" />
             <element signature="e#422#423#0" expanded="true" />
@@ -1068,8 +1077,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tw/core/AnswerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="320">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#205#206#0" expanded="true" />
