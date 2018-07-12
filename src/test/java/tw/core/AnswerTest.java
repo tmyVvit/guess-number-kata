@@ -59,9 +59,25 @@ public class AnswerTest {
     }
 
     @Test
+    public void should_return_4A0B_when_call_check_given_input_1234(){
+        Answer inputAnswer = Answer.createAnswer("1 2 3 4");
+
+        Record result = actualAnswer.check(inputAnswer);
+
+        assertEquals("4A0B", result.getValue());
+    }
+
+    @Test
     public void should_get_string_when_call_toString(){
         String str = actualAnswer.toString();
 
         assertEquals("1 2 3 4", str);
+    }
+
+    @Test
+    public void should_get_true_when_call_answer_given_input_1234(){
+        Answer answer = Answer.createAnswer("1 2 3 4");
+
+        assertEquals(actualAnswer.toString(), answer.toString());
     }
 }

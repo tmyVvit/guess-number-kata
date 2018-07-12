@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import tw.core.generator.AnswerGenerator;
 import tw.core.model.GuessResult;
 
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.mock;
@@ -35,6 +36,17 @@ public class GameTest {
         //then
         assertThat(guess.getResult(), is("4A0B"));
 
+    }
+
+    @Test
+    public void should_not_get_the_success_status_when_guess_input_is_wrong() throws Exception {
+
+        //given
+//        excuteSuccessGuess();
+        GuessResult guess = game.guess(Answer.createAnswer("1 2 5 6"));
+        //when
+        //then
+        assertThat(guess.getResult(), not("4A0B"));
     }
 
 
