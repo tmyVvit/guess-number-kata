@@ -580,26 +580,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers">
+  <component name="RunManager" selected="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="All in tdd-java-base_test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd-java-base_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="AnswerTest.should_not_throw_the_exception_when_call_validate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-java-base_test" />
@@ -637,6 +620,29 @@
       <option name="PACKAGE_NAME" value="tw.core" />
       <option name="MAIN_CLASS_NAME" value="tw.core.AnswerTest" />
       <option name="METHOD_NAME" value="should_return_true_when_call_validate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AnswerTest.should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd-java-base_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tw.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tw.core" />
+      <option name="MAIN_CLASS_NAME" value="tw.core.AnswerTest" />
+      <option name="METHOD_NAME" value="should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -732,19 +738,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in tdd-java-base_test (2)" />
       <item itemvalue="JUnit.AnswerTest.should_return_true_when_call_validate" />
       <item itemvalue="JUnit.AnswerTest.should_not_throw_the_exception_when_call_validate" />
       <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" />
       <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers" />
+      <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10" />
         <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_repeated_numbers" />
         <item itemvalue="JUnit.AnswerTest.should_throw_the_exception_when_call_validate_given_less_than_4_numbers" />
         <item itemvalue="JUnit.AnswerTest.should_not_throw_the_exception_when_call_validate" />
         <item itemvalue="JUnit.AnswerTest.should_return_true_when_call_validate" />
-        <item itemvalue="JUnit.All in tdd-java-base_test (2)" />
       </list>
     </recent_temporary>
   </component>

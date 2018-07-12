@@ -36,4 +36,14 @@ public class AnswerTest {
         } catch (AnswerFormatIncorrectException answerFormatIncorrectException){
         }
     }
+
+    @Test
+    public void should_throw_the_exception_when_call_validate_given_input_numbers_bigger_than_10(){
+        Answer answer = Answer.createAnswer("1 3 11 5");
+        try {
+            answer.validate();
+            fail("should throw the exception");
+        } catch (AnswerFormatIncorrectException answerFormatIncorrectException){
+        }
+    }
 }
