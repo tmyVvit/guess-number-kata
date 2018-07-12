@@ -16,6 +16,9 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+import static tw.core.GameStatus.CONTINUE;
+import static tw.core.GameStatus.FAIL;
+import static tw.core.GameStatus.SUCCESS;
 
 public class GameTest {
 
@@ -64,5 +67,39 @@ public class GameTest {
         assertEquals("2A1B", results.get(0).getResult());
         assertEquals("1A0B", results.get(1).getResult());
     }
+    
+    @Test
+    public void should_get_FAIL_when_call_checkStatus_given_6_times_wrong_guess() throws OutOfGuessCountException{
+    // given
+        game.guess(Answer.createAnswer("1 4 3 5"));
+        game.guess(Answer.createAnswer("7 9 6 5"));
+        game.guess(Answer.createAnswer("1 4 6 5"));
+        game.guess(Answer.createAnswer("7 1 3 5"));
+        game.guess(Answer.createAnswer("7 9 3 4"));
+        game.guess(Answer.createAnswer("7 9 6 2"));
+    // when
+        String result = game.checkStatus();
+    // then
+        assertEquals(FAIL, result);
+    }
 
+    @Test
+    public void should_get_SUCCESS_when_call_checkStatus_given_correct_guess() throws OutOfGuessCountException {
+    // given
+        game.guess(Answer.createAnswer("1 2 3 4"));
+    // when
+        String result = game.checkStatus();
+    // then
+        assertEquals(SUCCESS, result);
+    }
+
+    @Test
+    public void should_get_CONTINUE_when_call_checkStatus_fiven_guess_not_correct_and_less_than_6_times() throws OutOfGuessCountException {
+    // given
+        game.guess(Answer.createAnswer("1 2 3 5"));
+    // when
+        String result = game.checkStatus();
+    // then
+        assertEquals(CONTINUE, result);
+    }
 }
