@@ -114,4 +114,24 @@ public class GameTest {
     // then
         assertTrue(result);
     }
+
+    @Test
+    public void should_throw_exception_when_call_guess_given_input_guesses_more_than_6_times() throws OutOfGuessCountException {
+    // given
+        game.guess(Answer.createAnswer("1 3 4 2"));
+        game.guess(Answer.createAnswer("1 5 8 9"));
+        game.guess(Answer.createAnswer("1 4 3 2"));
+        game.guess(Answer.createAnswer("8 7 5 9"));
+        game.guess(Answer.createAnswer("2 9 7 5"));
+        game.guess(Answer.createAnswer("2 3 6 5"));
+    // when
+        try {
+            game.guess(Answer.createAnswer("5 6 4 2"));
+        }catch (OutOfGuessCountException outOfGuessCountException){
+
+        }
+    // then
+        ;
+    }
+
 }
