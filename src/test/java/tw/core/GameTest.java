@@ -4,12 +4,16 @@ package tw.core;/*
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tw.core.exception.OutOfGuessCountException;
 import tw.core.generator.AnswerGenerator;
 import tw.core.model.GuessResult;
+
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -45,9 +49,20 @@ public class GameTest {
 //        excuteSuccessGuess();
         GuessResult guess = game.guess(Answer.createAnswer("1 2 5 6"));
         //when
+        String result = guess.getResult();
         //then
-        assertThat(guess.getResult(), not("4A0B"));
+        assertThat(result, not("4A0B"));
     }
 
+    @Test
+    public void should_get_the_history_guesses_when_call_getHistory() throws OutOfGuessCountException {
+        game.guess(Answer.createAnswer("1 4 3 6"));
+        game.guess(Answer.createAnswer("1 5 6 7"));
+
+        List<GuessResult> results = game.guessHistory();
+
+        assertEquals("2A1B", results.get(0).getResult());
+        assertEquals("1A0B", results.get(1).getResult());
+    }
 
 }
