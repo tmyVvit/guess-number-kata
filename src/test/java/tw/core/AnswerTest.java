@@ -4,7 +4,9 @@ package tw.core;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import tw.core.exception.AnswerFormatIncorrectException;
+import tw.core.model.Record;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 /**
@@ -45,5 +47,14 @@ public class AnswerTest {
             fail("should throw the exception");
         } catch (AnswerFormatIncorrectException answerFormatIncorrectException){
         }
+    }
+
+    @Test
+    public void should_return_1A0B_when_call_check_given_input_1567(){
+        Answer inputAnswer = Answer.createAnswer("1 5 6 7");
+
+        Record result = actualAnswer.check(inputAnswer);
+
+        assertEquals("1A0B", result.getValue());
     }
 }
